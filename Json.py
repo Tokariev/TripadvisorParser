@@ -17,7 +17,7 @@ class Json:
         return weeks_day[day]
 
     def parse_time(self, day, time):
-        if ',' in time[0]:
+        if len(time) > 1:
             period_left = time[0][:13]
             period_right = time[0][-13:]
 
@@ -31,7 +31,7 @@ class Json:
 
             return day_info
 
-        elif ',' not in time[0]:
+        elif len(time) == 1:
             period_left_from = time[0][:5]
             period_right_to = time[0][-5:]
 

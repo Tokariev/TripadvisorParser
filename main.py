@@ -11,9 +11,9 @@ if __name__ == '__main__':
 
     ### Json ###
     json_string = '{ "tags": null, "display_hours": [{"days": "So", "times": ["17:00 - 00:00"] },{"days": "Di - Do", "times"' \
-                  ': ["17:00 - 00:00"] },{ "days": "Fr - Sa", "times": ["12:00 - 15:30, 19:00 - 00:30"] }]}'
+                  ': ["17:00 - 00:00"] },{ "days": "Fr - Sa", "times": ["12:00 - 15:30", "19:00 - 00:30"] }]}'
 
-    json_string = '{ "display_hours":[ { "days": "So - Sa", "times": ["12:00 - 14:30", "18:00 - 22:00"] }] }'
+    json_string = '{ "display_hours":[ { "days": "So - Mi", "times": ["12:00 - 14:30", "18:00 - 22:00"] }] }'
 
     parser = Json()
 
